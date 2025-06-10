@@ -1,0 +1,29 @@
+# /etc/logrotate.d/dnf-auto-update-slack
+/var/log/dnf-auto-update-slack.log {
+    # ログサイズが10MBに達したらローテート
+    size 10M
+    
+    # 最大5世代まで保持
+    rotate 5
+    
+    # ローテート後に圧縮
+    compress
+    
+    # 最新のローテートファイルは圧縮しない
+    delaycompress
+    
+    # ファイルが存在しない場合はエラーにしない
+    missingok
+    
+    # ファイルが空でもローテートしない
+    notifempty
+    
+    # ローテート後にファイルを新規作成
+    create 644 root root
+    
+    # 日付ベースの命名を使用
+    dateext
+    
+    # ローテート後にサービスの再起動は不要
+    # (このログはスクリプトが直接書き込むため)
+}
