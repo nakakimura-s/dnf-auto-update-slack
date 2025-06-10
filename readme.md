@@ -93,10 +93,3 @@ curl -sSL https://raw.githubusercontent.com/nakakimura-s/dnf-auto-update-slack/m
 - curl
 - root権限
 
-## ライセンス
-
-MIT License
-
-## 作者
-
-Your Name
