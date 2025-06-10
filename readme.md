@@ -12,7 +12,7 @@ DNFの自動更新とSlack通知を行うシステム
 ## クイックインストール
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/dnf-auto-update-slack/main/install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/nakakimura-s/dnf-auto-update-slack/main/install.sh | sudo bash
 ```
 
 ## 手動インストール
@@ -20,7 +20,7 @@ curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/dnf-auto-update-slack/
 ### 1. リポジトリをクローン
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/dnf-auto-update-slack.git
+git clone https://github.com/nakakimura-s/dnf-auto-update-slack.git
 cd dnf-auto-update-slack
 ```
 
@@ -83,7 +83,7 @@ sudo tail -f /var/log/dnf-auto-update-slack.log
 ## アンインストール
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/dnf-auto-update-slack/main/uninstall.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/nakakimura-s/dnf-auto-update-slack/main/uninstall.sh | sudo bash
 ```
 
 ## 要件
@@ -92,3 +92,11 @@ curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/dnf-auto-update-slack/
 - DNFパッケージマネージャー
 - curl
 - root権限
+
+## ライセンス
+
+MIT License
+
+## 作者
+
+Your Name
