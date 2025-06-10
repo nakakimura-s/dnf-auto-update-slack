@@ -12,7 +12,7 @@ SCRIPT_NAME="dnf-auto-update-slack.sh"
 SCRIPT_PATH="/usr/local/bin/$SCRIPT_NAME"
 LOGFILE="/var/log/dnf-auto-update-slack.log"
 LOGROTATE_CONFIG="/etc/logrotate.d/dnf-auto-update-slack"
-REPO_URL="https://raw.githubusercontent.com/YOUR_USERNAME/dnf-auto-update-slack/main"
+REPO_URL="https://raw.githubusercontent.com/nakakimura-s/dnf-auto-update-slack/main"
 
 # root権限チェック
 if [[ $EUID -ne 0 ]]; then
@@ -75,4 +75,4 @@ echo "   ログファイル: $LOGFILE"
 echo "   logrotate設定: $LOGROTATE_CONFIG"
 echo ""
 echo "アンインストール:"
-echo "   curl -sSL $REPO_URL/uninstall.sh | sudo bash"
+echo "   curl -sSL https://raw.githubusercontent.com/nakakimura-s/dnf-auto-update-slack/main/uninstall.sh | sudo bash"
