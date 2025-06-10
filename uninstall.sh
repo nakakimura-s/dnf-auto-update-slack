@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # dnf-auto-update-slack アンインストールスクリプト
-# Usage: curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/dnf-auto-update-slack/main/uninstall.sh | sudo bash
+# Usage: curl -sSL https://raw.githubusercontent.com/nakakimura-s/dnf-auto-update-slack/main/uninstall.sh | sudo bash
 
 set -e
 
