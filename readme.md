@@ -46,8 +46,13 @@ sudo nano /usr/local/bin/dnf-auto-update-slack.sh
 sudo crontab -e
 ```
 
-以下の行を追加（毎日午前2時に実行）：
+以下の行を追加
+週1回（日曜日午前2時）：
+```
+0 2 * * 0 /usr/local/bin/dnf-auto-update-slack.sh
+```
 
+毎日午前2時に実行：
 ```
 0 2 * * * /usr/local/bin/dnf-auto-update-slack.sh
 ```
